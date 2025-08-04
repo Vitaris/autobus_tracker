@@ -1,0 +1,496 @@
+https://mapa.idsbk.sk/navigation/vehicles/nearby?lat=48.20936499796402&lng=17.21264713125747&radius=3.228965057660326&cityID=-1
+	
+status	"ok"
+vehicles	
+0	
+vehicleID	806090881
+delayMinutes	0
+latitude	48.19099
+longitude	17.21324
+licenseNumber	null
+timeTableTrip	
+tripID	806090881
+trip	213
+destination	"Senec, Žel. stanica"
+direction	null
+tripDirectionHere	false
+ezTripDirection	"there"
+destinationStopName	"Žel. stanica"
+destinationCityName	"Senec"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	806001853
+lineType	2
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"620"
+lineNumber	10620
+lineName	"Bratislava-Nová Dedinka-Senec"
+firmaID	806
+uniqueID	"10620/806"
+ezIsTrain	false
+ezIsUrban	false
+ezIsBus	true
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"ARRIVA Mobility Solutions"
+operatorID	11050
+operatorName	"ARRIVA Mobility Solutions"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	9
+isOnStop	false
+tooltip	"Bratislava, AS → Senec, Žel. stanica"
+1	
+vehicleID	806090220
+delayMinutes	1
+latitude	48.22358
+longitude	17.18535
+licenseNumber	null
+timeTableTrip	
+tripID	806090220
+trip	220
+destination	"Bratislava, AS"
+direction	null
+tripDirectionHere	true
+ezTripDirection	"here"
+destinationStopName	"AS"
+destinationCityName	"Bratislava"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	806001842
+lineType	2
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"540"
+lineNumber	10540
+lineName	"Bratislava-Pezinok-Modra"
+firmaID	806
+uniqueID	"10540/806"
+ezIsTrain	false
+ezIsUrban	false
+ezIsBus	true
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"ARRIVA Mobility Solutions"
+operatorID	11050
+operatorName	"ARRIVA Mobility Solutions"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	26
+isOnStop	false
+tooltip	"Modra, Zochova chata → Bratislava, AS"
+2	
+vehicleID	806090352
+delayMinutes	2
+latitude	48.21501
+longitude	17.16443
+licenseNumber	null
+timeTableTrip	
+tripID	806090352
+trip	217
+destination	"Modra, Zochova chata"
+direction	null
+tripDirectionHere	false
+ezTripDirection	"there"
+destinationStopName	"Zochova chata"
+destinationCityName	"Modra"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	806001842
+lineType	2
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"540"
+lineNumber	10540
+lineName	"Bratislava-Pezinok-Modra"
+firmaID	806
+uniqueID	"10540/806"
+ezIsTrain	false
+ezIsUrban	false
+ezIsBus	true
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"ARRIVA Mobility Solutions"
+operatorID	11050
+operatorName	"ARRIVA Mobility Solutions"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	9
+isOnStop	false
+tooltip	"Bratislava, AS → Modra, Zochova chata"
+3	
+vehicleID	806089902
+delayMinutes	3
+latitude	48.20838
+longitude	17.21569
+licenseNumber	null
+timeTableTrip	
+tripID	806089902
+trip	223
+destination	"Slovenský Grob, Obecný úrad"
+direction	null
+tripDirectionHere	false
+ezTripDirection	"there"
+destinationStopName	"Obecný úrad"
+destinationCityName	"Slovenský Grob"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	806001837
+lineType	2
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"527"
+lineNumber	10527
+lineName	"Bratislava-Slovenský Grob-Pezinok"
+firmaID	806
+uniqueID	"10527/806"
+ezIsTrain	false
+ezIsUrban	false
+ezIsBus	true
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"ARRIVA Mobility Solutions"
+operatorID	11050
+operatorName	"ARRIVA Mobility Solutions"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	7
+isOnStop	true
+tooltip	"Bratislava, Shopping Palace → Slovenský Grob, Obecný úrad; meškanie 3 min."
+4	
+vehicleID	806089861
+delayMinutes	1
+latitude	48.20925
+longitude	17.2184
+licenseNumber	null
+timeTableTrip	
+tripID	806089861
+trip	224
+destination	"Bratislava, Shopping Palace"
+direction	null
+tripDirectionHere	true
+ezTripDirection	"here"
+destinationStopName	"Shopping Palace"
+destinationCityName	"Bratislava"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	806001837
+lineType	2
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"527"
+lineNumber	10527
+lineName	"Bratislava-Slovenský Grob-Pezinok"
+firmaID	806
+uniqueID	"10527/806"
+ezIsTrain	false
+ezIsUrban	false
+ezIsBus	true
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"ARRIVA Mobility Solutions"
+operatorID	11050
+operatorName	"ARRIVA Mobility Solutions"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	22
+isOnStop	true
+tooltip	"Pezinok, Žel.stanica → Bratislava, Shopping Palace"
+5	
+vehicleID	802992909
+delayMinutes	14
+latitude	48.19631
+longitude	17.17865
+licenseNumber	null
+timeTableTrip	
+tripID	802992909
+trip	79
+destination	"Bratislava, OC Rača"
+direction	null
+tripDirectionHere	false
+ezTripDirection	"there"
+destinationStopName	"OC Rača"
+destinationCityName	"Bratislava"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	800010920
+lineType	1
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"56"
+lineNumber	105056
+lineName	"56"
+firmaID	800
+uniqueID	"105056/800"
+ezIsTrain	false
+ezIsUrban	true
+ezIsBus	false
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"Dopravný podnik Bratislava"
+operatorID	11090
+operatorName	"Dopravný podnik Bratislava"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	10
+isOnStop	false
+tooltip	"Bratislava, Studená → Bratislava, OC Rača; meškanie 14 min."
+6	
+vehicleID	802993015
+delayMinutes	0
+latitude	48.18837
+longitude	17.17736
+licenseNumber	null
+timeTableTrip	
+tripID	802993015
+trip	160
+destination	"Bratislava, Tbiliská"
+direction	null
+tripDirectionHere	true
+ezTripDirection	"here"
+destinationStopName	"Tbiliská"
+destinationCityName	"Bratislava"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	800010921
+lineType	1
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"65"
+lineNumber	105065
+lineName	"65"
+firmaID	800
+uniqueID	"105065/800"
+ezIsTrain	false
+ezIsUrban	true
+ezIsBus	false
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"Dopravný podnik Bratislava"
+operatorID	11090
+operatorName	"Dopravný podnik Bratislava"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	20
+isOnStop	false
+tooltip	"Bratislava, Stn. Vrakuňa → Bratislava, Tbiliská"
+7	
+vehicleID	802992832
+delayMinutes	11
+latitude	48.19674
+longitude	17.17588
+licenseNumber	null
+timeTableTrip	
+tripID	802992832
+trip	84
+destination	"Bratislava, Studená"
+direction	null
+tripDirectionHere	true
+ezTripDirection	"here"
+destinationStopName	"Studená"
+destinationCityName	"Bratislava"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	800010920
+lineType	1
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"56"
+lineNumber	105056
+lineName	"56"
+firmaID	800
+uniqueID	"105056/800"
+ezIsTrain	false
+ezIsUrban	true
+ezIsBus	false
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"Dopravný podnik Bratislava"
+operatorID	11090
+operatorName	"Dopravný podnik Bratislava"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	19
+isOnStop	false
+tooltip	"Bratislava, OC Rača → Bratislava, Studená; meškanie 11 min."
+8	
+vehicleID	803009363
+delayMinutes	3
+latitude	48.21683
+longitude	17.16737
+licenseNumber	null
+timeTableTrip	
+tripID	803009363
+trip	734
+destination	"Bratislava, Komisárky"
+direction	null
+tripDirectionHere	true
+ezTripDirection	"here"
+destinationStopName	"Komisárky"
+destinationCityName	"Bratislava"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	800010982
+lineType	1
+ezLineType	"tram"
+ezVehicleType	"TRAM"
+line	"3"
+lineNumber	105003
+lineName	"3"
+firmaID	800
+uniqueID	"105003/800"
+ezIsTrain	false
+ezIsUrban	true
+ezIsBus	false
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"Dopravný podnik Bratislava"
+operatorID	11090
+operatorName	"Dopravný podnik Bratislava"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	30
+isOnStop	false
+tooltip	"Bratislava, Južné mesto → Bratislava, Komisárky; meškanie 3 min."
+9	
+vehicleID	802993011
+delayMinutes	9
+latitude	48.22107
+longitude	17.17906
+licenseNumber	null
+timeTableTrip	
+tripID	802993011
+trip	152
+destination	"Bratislava, Tbiliská"
+direction	null
+tripDirectionHere	true
+ezTripDirection	"here"
+destinationStopName	"Tbiliská"
+destinationCityName	"Bratislava"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	800010921
+lineType	1
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"65"
+lineNumber	105065
+lineName	"65"
+firmaID	800
+uniqueID	"105065/800"
+ezIsTrain	false
+ezIsUrban	true
+ezIsBus	false
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"Dopravný podnik Bratislava"
+operatorID	11090
+operatorName	"Dopravný podnik Bratislava"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	35
+isOnStop	false
+tooltip	"Bratislava, Stn. Vrakuňa → Bratislava, Tbiliská; meškanie 9 min."
+10	
+vehicleID	802993151
+delayMinutes	0
+latitude	48.21684
+longitude	17.17854
+licenseNumber	null
+timeTableTrip	
+tripID	802993151
+trip	171
+destination	"Bratislava, Stn. Vrakuňa"
+direction	null
+tripDirectionHere	false
+ezTripDirection	"there"
+destinationStopName	"Stn. Vrakuňa"
+destinationCityName	"Bratislava"
+bicycle	false
+wifi	false
+lowFloor	true
+timeTableLine	
+lineID	800010921
+lineType	1
+ezLineType	"bus"
+ezVehicleType	"BUS"
+line	"65"
+lineNumber	105065
+lineName	"65"
+firmaID	800
+uniqueID	"105065/800"
+ezIsTrain	false
+ezIsUrban	true
+ezIsBus	false
+ezTrainType	""
+ezTrainLabel	""
+supervisorName	"Dopravný podnik Bratislava"
+operatorID	11090
+operatorName	"Dopravný podnik Bratislava"
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	12
+isOnStop	false
+tooltip	"Bratislava, Tbiliská → Bratislava, Stn. Vrakuňa"
+11	
+vehicleID	950591560
+delayMinutes	5
+latitude	48.19474
+longitude	17.20668
+licenseNumber	null
+timeTableTrip	
+tripID	950591560
+trip	1
+destination	"Nové Zámky, žel.st."
+direction	null
+tripDirectionHere	false
+ezTripDirection	"there"
+destinationStopName	"žel.st."
+destinationCityName	"Nové Zámky"
+bicycle	false
+wifi	false
+lowFloor	false
+timeTableLine	
+lineID	950572525
+lineType	31
+ezLineType	"train"
+ezVehicleType	null
+line	"S60"
+lineNumber	4719
+lineName	""
+firmaID	950
+uniqueID	"4719/950"
+ezIsTrain	true
+ezIsUrban	false
+ezIsBus	false
+ezTrainType	"personal"
+ezTrainLabel	"S"
+supervisorName	"ŽSSK a.s."
+operatorID	11110
+operatorName	"ŽSSK a.s."
+messages	""
+lastCommunication	"0001-01-01T00:00:00"
+lastStopOrder	4
+isOnStop	false
+tooltip	"Bratislava hlavná stanica, žel.st. → Nové Zámky, žel.st.; meškanie 5 min."

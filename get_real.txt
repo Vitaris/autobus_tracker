@@ -1,0 +1,13 @@
+	
+status	"ok"
+vehicle	
+vehicleID	"527-223-806"
+delayMinutes	4
+latitude	48.21352
+longitude	17.22205
+licenseNumber	"BT064DI"
+timeTableTrip	null
+lastCommunication	"2025-08-03T13:31:20+02:00"
+lastStopOrder	7
+isOnStop	false
+tooltip	null
