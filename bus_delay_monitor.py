@@ -40,7 +40,6 @@ departure_527_Pezinok_to_SP = [
     datetime.time(8, 54),
     datetime.time(10, 54),
     datetime.time(12, 54),
-    datetime.time(12, 59), # debug
     datetime.time(13, 24),
     datetime.time(13, 54),
     datetime.time(14, 54),
