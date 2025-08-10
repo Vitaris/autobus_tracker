@@ -1,10 +1,13 @@
 import schedule
 import datetime
 import time
+import logging
 from route_tracker import BusTracker
 
-shopping_palace_coordinates = 'lat=48.18775935062897&lng=17.182493638092055&radius=5.0'
-pezinok_coordinates = 'lat=48.28605918695282&lng=17.274160813385024&radius=5.0'
+logger = logging.getLogger("autobus_tracker")
+
+shopping_palace_coordinates = 'lat=48.18775935062897&lng=17.182493638092055&radius=3.1674463090485787'
+pezinok_coordinates = 'lat=48.28763726983306&lng=17.274096270366496&radius=3.1672252273331774'
 
 departure_527_SP_to_Pezinok = [
     datetime.time(5, 45),
@@ -51,15 +54,17 @@ departure_527_Pezinok_to_SP = [
 ]
 
 def bus_to_PK_task():
-    print(f"Bus is departing at {datetime.datetime.now().strftime('%H:%M:%S')} - to PK")
+    logger.info(f"Bus is departing at {datetime.datetime.now().strftime('%H:%M:%S')} - to PK")
     bus_tracker_pk = BusTracker(shopping_palace_coordinates, 527)
     # Add your monitoring logic here
 
 def bus_to_SP_task():
-    print(f"Bus is departing at {datetime.datetime.now().strftime('%H:%M:%S')} - to SP")
-    # bus_tracker_sp = BusTracker(pezinok_coordinates, 527)
-    bus_tracker_sp = BusTracker(pezinok_coordinates, 610)
+    logger.info(f"Bus is departing at {datetime.datetime.now().strftime('%H:%M:%S')} - to SP")
+    bus_tracker_sp = BusTracker(pezinok_coordinates, 527)
     # Add your monitoring logic here
+
+logger.info("Bus delay monitor starting")
+logger.info(f"Scheduling {len(departure_527_SP_to_Pezinok)} SP->PK departures and {len(departure_527_Pezinok_to_SP)} PK->SP departures")
 
 # Schedule the task for each departure time
 for departure in departure_527_SP_to_Pezinok:
@@ -69,7 +74,9 @@ for departure in departure_527_SP_to_Pezinok:
 for departure in departure_527_Pezinok_to_SP:
     schedule.every().day.at(departure.strftime("%H:%M")).do(bus_to_SP_task)
 
-bus_tracker_sp = BusTracker(pezinok_coordinates, 506)
+# logger.info("Starting immediate tracker: line=521 from Pezinok")
+# bus_tracker_sp = BusTracker(pezinok_coordinates, 521)
+
 # Keep the script running
 while True:
     schedule.run_pending()
