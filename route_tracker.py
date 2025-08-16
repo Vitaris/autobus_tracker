@@ -1,3 +1,4 @@
+import time
 from enum import Enum, auto
 import requests
 import schedule
@@ -45,7 +46,14 @@ class BusTracker:
         self._job_tag = None
 
         self.logger.info(f"Initializing BusTracker line={self.line}, coords='{self.coordinates}'")
-        self.get_trip_id()
+        for i in range(10):
+            self.get_trip_id()
+            if self.trip_id:
+                self.logger.info(f"Found trip ID for line={self.line}: {self.trip_id}, tripNr={self.trip_nr}")
+                break
+            else:
+                self.logger.warning(f"Attempt {i+1}/10: No trip ID found for line={self.line}, retrying...")
+                time.sleep(60)
 
         if self.trip_id:
             self._job_tag = f"delay:{self.line}:{self.trip_id}"
@@ -66,6 +74,7 @@ class BusTracker:
                 for vehicle in data['vehicles']:
                     self.logger.debug(f"nearby line: {vehicle['timeTableTrip']['timeTableLine']['line']}")
                     if vehicle['timeTableTrip']['timeTableLine']['line'] != str(self.line):
+                        # vehicle['timeTableTrip']['timeTableLine']['line'] != f'101{str(self.line)}':
                         continue
                     self.trip_id = vehicle['timeTableTrip']['tripID']
                     self.trip_nr = vehicle['timeTableTrip']['trip']
