@@ -32,282 +32,53 @@
   ],
   "location": "lat=48.18775935062897&lng=17.182493638092055",
   "Trips": [
-    {
-      "id": 5,
-      "departure": "05:45",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 7,
-      "departure": "06:15",
-      "service": "Workdays-No-Summertime",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 307,
-      "departure": "06:15",
-      "service": "Workdays-Only-Summertime",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 9,
-      "departure": "06:45",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 11,
-      "departure": "07:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 13,
-      "departure": "08:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 15,
-      "departure": "09:15",
-      "service": "Workdays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 17,
-      "departure": "10:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 19,
-      "departure": "11:15",
-      "service": "Workdays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 21,
-      "departure": "12:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 23,
-      "departure": "13:15",
-      "service": "Workdays-No-Summertime",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 323,
-      "departure": "13:15",
-      "service": "Workdays-Only-Summertime",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 25,
-      "departure": "13:45",
-      "service": "Workdays-No-Summertime",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 27,
-      "departure": "14:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 29,
-      "departure": "14:45",
-      "service": "Workdays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 31,
-      "departure": "15:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 33,
-      "departure": "15:45",
-      "service": "Workdays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 35,
-      "departure": "16:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 37,
-      "departure": "16:45",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 39,
-      "departure": "17:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 41,
-      "departure": "17:45",
-      "service": "Workdays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 43,
-      "departure": "18:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 45,
-      "departure": "19:15",
-      "service": "Workdays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 47,
-      "departure": "20:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 49,
-      "departure": "21:15",
-      "service": "Workdays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 51,
-      "departure": "22:15",
-      "service": "Workdays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 53,
-      "departure": "23:15",
-      "service": "Workdays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 205,
-      "departure": "05:10",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 207,
-      "departure": "06:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 211,
-      "departure": "07:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 213,
-      "departure": "08:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 215,
-      "departure": "09:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 217,
-      "departure": "10:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 219,
-      "departure": "11:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 221,
-      "departure": "12:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 223,
-      "departure": "13:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 227,
-      "departure": "14:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 231,
-      "departure": "15:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 235,
-      "departure": "16:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 239,
-      "departure": "17:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 243,
-      "departure": "18:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 245,
-      "departure": "19:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 247,
-      "departure": "20:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 249,
-      "departure": "21:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    },
-    {
-      "id": 251,
-      "departure": "22:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Pezinok, Žel. stanica"
-    },
-    {
-      "id": 253,
-      "departure": "23:15",
-      "service": "Weekends-Holidays",
-      "finalStop": "Slovenský Grob, Obecný úrad"
-    }
+    {"id": 5, "initial_departure": "05:45", "selectedDeparture": "06:01", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 7, "initial_departure": "06:15", "selectedDeparture": "06:31", "service": "Workdays-No-Summertime", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 307, "initial_departure": "06:15", "selectedDeparture": "06:31", "service": "Workdays-Only-Summertime", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 9, "initial_departure": "06:45", "selectedDeparture": "07:01", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 11, "initial_departure": "07:15", "selectedDeparture": "07:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 13, "initial_departure": "08:15", "selectedDeparture": "08:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 15, "initial_departure": "09:15", "selectedDeparture": "09:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 17, "initial_departure": "10:15", "selectedDeparture": "10:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 19, "initial_departure": "11:15", "selectedDeparture": "11:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 21, "initial_departure": "12:15", "selectedDeparture": "12:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 23, "initial_departure": "13:15", "selectedDeparture": "13:31", "service": "Workdays-No-Summertime", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 323, "initial_departure": "13:15", "selectedDeparture": "13:31", "service": "Workdays-Only-Summertime", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 25, "initial_departure": "13:45", "selectedDeparture": "14:01", "service": "Workdays-No-Summertime", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 27, "initial_departure": "14:15", "selectedDeparture": "14:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 29, "initial_departure": "14:45", "selectedDeparture": "15:01", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 31, "initial_departure": "15:15", "selectedDeparture": "15:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 33, "initial_departure": "15:45", "selectedDeparture": "16:01", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 35, "initial_departure": "16:15", "selectedDeparture": "16:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 37, "initial_departure": "16:45", "selectedDeparture": "17:01", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 39, "initial_departure": "17:15", "selectedDeparture": "17:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 41, "initial_departure": "17:45", "selectedDeparture": "18:01", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 43, "initial_departure": "18:15", "selectedDeparture": "18:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 45, "initial_departure": "19:15", "selectedDeparture": "19:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 47, "initial_departure": "20:15", "selectedDeparture": "20:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 49, "initial_departure": "21:15", "selectedDeparture": "21:31", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 51, "initial_departure": "22:15", "selectedDeparture": "22:30", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 53, "initial_departure": "23:15", "selectedDeparture": "23:30", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+
+    {"id": 205, "initial_departure": "05:10", "selectedDeparture": "05:25", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 207, "initial_departure": "06:15", "selectedDeparture": "06:30", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 211, "initial_departure": "07:15", "selectedDeparture": "07:30", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 213, "initial_departure": "08:15", "selectedDeparture": "08:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 215, "initial_departure": "09:15", "selectedDeparture": "09:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 217, "initial_departure": "10:15", "selectedDeparture": "10:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 219, "initial_departure": "11:15", "selectedDeparture": "11:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 221, "initial_departure": "12:15", "selectedDeparture": "12:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 223, "initial_departure": "13:15", "selectedDeparture": "13:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 227, "initial_departure": "14:15", "selectedDeparture": "14:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 231, "initial_departure": "15:15", "selectedDeparture": "15:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 235, "initial_departure": "16:15", "selectedDeparture": "16:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 239, "initial_departure": "17:15", "selectedDeparture": "17:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 243, "initial_departure": "18:15", "selectedDeparture": "18:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 245, "initial_departure": "19:15", "selectedDeparture": "19:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 247, "initial_departure": "20:15", "selectedDeparture": "20:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 249, "initial_departure": "21:15", "selectedDeparture": "21:31", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"},
+    {"id": 251, "initial_departure": "22:15", "selectedDeparture": "22:30", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
+    {"id": 253, "initial_departure": "23:15", "selectedDeparture": "23:30", "service": "Weekends-Holidays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Slovenský Grob, Obecný úrad"}
   ]
 
 }
