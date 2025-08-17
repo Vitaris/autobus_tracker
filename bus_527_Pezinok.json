@@ -29,7 +29,6 @@
     "Bratislava, Zlaté piesky",
     "Bratislava, Shopping Palace"
   ],
-  "location": "lat=48.28763726983306&lng=17.274096270366496",
   "Trips": [
     { "id": 6, "initDeparture": "06:12", "selectedDeparture": "06:26", "service": "Workdays", "initStop": "Slovenský Grob, Obecný úrad", "finalStop": "Bratislava, Shopping Palace" },
     { "id": 8, "initDeparture": "06:24", "selectedDeparture": "06:56", "service": "Workdays", "initStop": "Pezinok, Žel. stanica", "finalStop": "Bratislava, Shopping Palace" },

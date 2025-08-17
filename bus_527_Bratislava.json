@@ -30,7 +30,6 @@
     "Pezinok, Jesenského",
     "Pezinok, Žel. stanica"
   ],
-  "location": "lat=48.18775935062897&lng=17.182493638092055",
   "Trips": [
     {"id": 5, "initial_departure": "05:45", "selectedDeparture": "06:01", "service": "Workdays", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
     {"id": 7, "initial_departure": "06:15", "selectedDeparture": "06:31", "service": "Workdays-No-Summertime", "initStop": "Bratislava, Shopping Palace", "finalStop": "Pezinok, Žel. stanica"},
