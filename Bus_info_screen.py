@@ -3,7 +3,7 @@ import schedule
 import logging
 from daily_scheduler import DailyScheduler
 
-HEADER_TEXTS = ["ODCHOD", "SMER", "AKTUÁLNE", "MEŠKANIE"]
+HEADER_TEXTS = ["ODCHOD", "SMER", "MEŠKANIE"]
 ROWS = 8
 
 # Per‑cell background colors (None = uses global BG_COLOR)
@@ -55,9 +55,12 @@ def draw_header(canvas):
     # Header line
     canvas.create_line(0, row_height, w, row_height, fill=LINE_COLOR, width=4)
 
+    columns_ratio = [0.12, 0.76, 0.12]
+
     # Columns lines
+    x = 0
     for i in range(1, cols):
-        x = i * col_width
+        x += w * columns_ratio[i - 1]
         canvas.create_line(x, row_height, x, h, fill=LINE_COLOR, width=1)
 
 
@@ -89,7 +92,6 @@ def draw_header(canvas):
         col_texts = [
             info.get('selectedDeparture', ''),
             info.get('finalStop', ''),
-            info.get('current', ''),      # placeholder
             info.get('delay', '')         # placeholder
         ]
         for col_idx, text in enumerate(col_texts):
@@ -99,7 +101,7 @@ def draw_header(canvas):
                 x, cy,
                 text=text,
                 fill=TEXT_COLOR,
-                font=("Segoe UI", 64, "bold"),
+                font=("Segoe UI", 72, "bold"),
                 anchor="w"
 
             )
