@@ -58,7 +58,7 @@ class DailyScheduler:
         if not data or 'Trips' not in data:
             print("No trips to schedule.")
             return
-        now = datetime.datetime.now() - datetime.timedelta(hours=8)
+        now = datetime.datetime.now()
         for trip in data['Trips']:
             dep = trip.get("initDeparture")
             is_future, delta = compare_departure_today(dep, now)
@@ -70,6 +70,13 @@ class DailyScheduler:
                     continue
             else:
                 if service == "Workdays":
+                    continue
+
+            if self.summer_holiday:
+                if service == "Workdays-No-Summertime":
+                    continue
+            else:
+                if service == "Workdays-Summertime":
                     continue
 
             # Here you would schedule the job; for now just print
