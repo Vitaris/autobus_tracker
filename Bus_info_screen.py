@@ -55,7 +55,7 @@ def draw_header(canvas):
     row_height = (h - HEADER_HEIGHT) / ROWS
 
     # Draw header background rectangle
-    canvas.create_rectangle(0, 0, w, HEADER_HEIGHT, fill='#303030')
+    canvas.create_rectangle(0, 0, w, HEADER_HEIGHT, fill='#206020')
 
     # Header horizontal line
     canvas.create_line(0, HEADER_HEIGHT, w, HEADER_HEIGHT, fill=LINE_COLOR, width=4)
