@@ -1,81 +1,19 @@
-import schedule
-import datetime
 import time
 import logging
-from route_tracker import BusTracker
+import schedule
+from daily_scheduler import DailyScheduler
 
 logger = logging.getLogger("autobus_tracker")
-
-shopping_palace_coordinates = 'lat=48.18775935062897&lng=17.182493638092055&radius=3.1674463090485787'
-pezinok_coordinates = 'lat=48.28763726983306&lng=17.274096270366496&radius=3.1672252273331774'
-
-departure_527_SP_to_Pezinok = [
-    datetime.time(5, 45),
-    datetime.time(6, 15),
-    datetime.time(6, 45),
-    datetime.time(7, 15),
-    datetime.time(8, 15),
-    datetime.time(9, 15),
-    datetime.time(10, 15),
-    datetime.time(11, 15),
-    datetime.time(12, 15),
-    datetime.time(13, 15),
-    datetime.time(13, 45),
-    datetime.time(14, 15),
-    datetime.time(14, 45),
-    datetime.time(15, 15),
-    datetime.time(15, 45),
-    datetime.time(16, 15),
-    datetime.time(16, 45),
-    datetime.time(17, 15),
-    datetime.time(18, 15),
-    datetime.time(19, 15),
-    datetime.time(20, 15),
-    datetime.time(21, 15)
-]
-departure_527_Pezinok_to_SP = [
-    datetime.time(4, 34),
-    datetime.time(5, 24),
-    datetime.time(6, 24),
-    datetime.time(6, 54),
-    datetime.time(7, 24),
-    datetime.time(7, 54),
-    datetime.time(8, 54),
-    datetime.time(10, 54),
-    datetime.time(12, 54),
-    datetime.time(13, 24),
-    datetime.time(13, 54),
-    datetime.time(14, 54),
-    datetime.time(15, 54),
-    datetime.time(16, 54),
-    datetime.time(17, 54),
-    datetime.time(18, 54),
-    datetime.time(20, 54)
-]
-
-def bus_to_PK_task():
-    logger.info(f"Bus is departing at {datetime.datetime.now().strftime('%H:%M:%S')} - to PK")
-    bus_tracker_pk = BusTracker(shopping_palace_coordinates, 527)
-    # Add your monitoring logic here
-
-def bus_to_SP_task():
-    logger.info(f"Bus is departing at {datetime.datetime.now().strftime('%H:%M:%S')} - to SP")
-    bus_tracker_sp = BusTracker(pezinok_coordinates, 527)
-    # Add your monitoring logic here
-
 logger.info("Bus delay monitor starting")
-logger.info(f"Scheduling {len(departure_527_SP_to_Pezinok)} SP->PK departures and {len(departure_527_Pezinok_to_SP)} PK->SP departures")
 
-# Schedule the task for each departure time
-for departure in departure_527_SP_to_Pezinok:
-    schedule.every().day.at(departure.strftime("%H:%M")).do(bus_to_PK_task)
 
-# Schedule the task for each departure time
-for departure in departure_527_Pezinok_to_SP:
-    schedule.every().day.at(departure.strftime("%H:%M")).do(bus_to_SP_task)
+scheduler_pezinok = DailyScheduler("bus_527_Pezinok.json")
+scheduler_bratislava = DailyScheduler("bus_527_Bratislava.json")
+screen_content = scheduler_pezinok.get_screen_content()
+screen_content.update(scheduler_bratislava.get_screen_content())
 
-# logger.info("Starting immediate tracker: line=521 from Pezinok")
-# bus_tracker_sp = BusTracker(pezinok_coordinates, 521)
+# sort screen_content by selectedDeparture
+screen_content = dict(sorted(screen_content.items(), key=lambda item: item[1]['selectedDeparture']))
 
 # Keep the script running
 while True:
