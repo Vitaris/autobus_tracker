@@ -1,10 +1,15 @@
 import tkinter as tk
+from random import random
+from random import choice
+
 import schedule
 import logging
 from daily_scheduler import DailyScheduler
 
-HEADER_TEXTS = ["ODCHOD", "SMER", "MEŠKANIE"]
-ROWS = 8
+HEADER_TEXTS = ["ODCHOD", "SMER", "MEŠKÁ"]
+HEADER_HEIGHT = 100  # Height of the header in pixels
+COLUMNS_RATIOS = [0.14, 0.74, 0.12]
+ROWS = 6  # Number of rows to display (excluding header)
 
 # Per‑cell background colors (None = uses global BG_COLOR)
 CELL_BG_COLORS = [
@@ -47,64 +52,63 @@ def draw_header(canvas):
 
     cols = len(HEADER_TEXTS)
     col_width = w / cols
-    row_height = h / ROWS
+    row_height = (h - HEADER_HEIGHT) / ROWS
 
-    # Draw rectangle above the header
-    canvas.create_rectangle(0, 0, w, row_height, fill='#303030')
+    # Draw header background rectangle
+    canvas.create_rectangle(0, 0, w, HEADER_HEIGHT, fill='#303030')
 
-    # Header line
-    canvas.create_line(0, row_height, w, row_height, fill=LINE_COLOR, width=4)
+    # Header horizontal line
+    canvas.create_line(0, HEADER_HEIGHT, w, HEADER_HEIGHT, fill=LINE_COLOR, width=4)
 
-    columns_ratio = [0.12, 0.76, 0.12]
+    # Write header texts
+    cx = 0
+    for idx, header in enumerate(HEADER_TEXTS):
+        cx += w * COLUMNS_RATIOS[idx] / 2 # Add first half of the column width
+        canvas.create_text(
+            cx, HEADER_HEIGHT / 2,
+            text=header,
+            fill=TEXT_COLOR,
+            font=("Segoe UI", 40, "bold")
+        )
+        cx += w * COLUMNS_RATIOS[idx] / 2 # Add second half of the column width
 
     # Columns lines
     x = 0
     for i in range(1, cols):
-        x += w * columns_ratio[i - 1]
-        canvas.create_line(x, row_height, x, h, fill=LINE_COLOR, width=1)
+        x += w * COLUMNS_RATIOS[i - 1]
+        canvas.create_line(x, HEADER_HEIGHT, x, h, fill=LINE_COLOR, width=1)
 
-
-    # Write header texts
+    # Timetable texts
     cx = col_width / 2
-    i = 0
-    for header in HEADER_TEXTS:
-        canvas.create_text(
-            cx, row_height / 2,
-            text=HEADER_TEXTS[i],
-            fill=TEXT_COLOR,
-            font=("Segoe UI", 32, "bold")
-        )
-        cx += col_width
-        i += 1
+    cy = HEADER_HEIGHT + row_height / 2  # start below header
 
-
-
-
-    cx = col_width / 2
-    cy = row_height + row_height / 2  # start below header
     # Get ordered list of trips (preserves previous sorting)
     items = list(screen_content.items())
-    max_rows = min(ROWS - 1, len(items))
-    columns_ratio  = [-0.45, -1.1, 0, 0]
-    for row_idx in range(max_rows):
+
+    for row_idx in range(ROWS):
         trip_id, info = items[row_idx]
-        # Example columns: SMER(finalStop), ODCHOD(selectedDeparture), AKTUÁLNE(blank), MEŠKANIE(blank)
         col_texts = [
             info.get('selectedDeparture', ''),
             info.get('finalStop', ''),
-            info.get('delay', '')         # placeholder
+            info.get('delay', f'{choice([1, 3, 5, 20])}')         # placeholder
         ]
+        x = 0
         for col_idx, text in enumerate(col_texts):
-            x = (col_idx + 0.5) * col_width
-            x += col_width * columns_ratio[col_idx] # Adjust width based on ratio
+            x += w * COLUMNS_RATIOS[col_idx] / 2 # Add first half of the column width
+            if col_idx == 1:
+                anchor = "w"
+                cx = x - w * COLUMNS_RATIOS[col_idx] / 2 + 10
+            else:
+                anchor = "center"
+                cx = x
             canvas.create_text(
-                x, cy,
+                cx, cy,
                 text=text,
                 fill=TEXT_COLOR,
                 font=("Segoe UI", 72, "bold"),
-                anchor="w"
-
+                anchor=anchor
             )
+            x += w * COLUMNS_RATIOS[col_idx] / 2  # Add second half of the column width
         cy += row_height
 
 def main():

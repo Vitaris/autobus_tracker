@@ -77,7 +77,7 @@ class DailyScheduler:
         if not data or 'Trips' not in data:
             logger.info("No trips to schedule.")
             return
-        now = datetime.datetime.now()
+        now = datetime.datetime.now() - datetime.timedelta(hours=8)
         for trip in data['Trips']:
             dep = trip.get("initDeparture")
             is_future, delta = compare_departure_today(dep, now)
